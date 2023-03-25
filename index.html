@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>JS game</title>
-</head>
-<body>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>JS game</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="app__header">
+        <h1 id="header-timer">время игры: <span id="time">5</span></h1>
+        <h1 id="header-result" class="hide">результат игры: <span id="result"></span></h1>
+      </div>
+      <div class="app__content">
+        <button class="btn" id="start">start</button>
+        <div class="game-field" id="game-field"></div>
+      </div>
+      <div class="app__footer">
+        <form class="game-time-input">
+          <label for="game-time">время игры (сек)</label>
+          <input type="number" name="game-time" id="game-time" value="5" min="5" step="1" />
+        </form>
+      </div>
+    </div>
 
-  <script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>

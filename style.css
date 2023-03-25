@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app {
+  width: 400px;
+  background-color: orange;
+  border-radius: 15px;
+}
+.app__header {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.app__content {
+  width: 300px;
+  height: 300px;
+  margin: 15px auto;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app__content .btn {
+  padding: 10px 15px;
+  background-color: rgb(8, 149, 200);
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.game-time-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+.game-time-input input {
+  padding: 10px;
+  margin-top: 5px;
+}
+.hide{
+  display: none;
+}
+.game-field{
+  width: 300px;
+  height: 300px;
+}
